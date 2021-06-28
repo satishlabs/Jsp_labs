@@ -1,4 +1,4 @@
-package com.satishlabs;
+package com.satishlabs.entity;
 
 public class Customer {
 	private int cid;
