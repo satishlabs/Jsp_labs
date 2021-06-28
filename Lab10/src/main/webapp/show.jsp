@@ -11,7 +11,9 @@
 	<table>
 		<tr>
 			<td>1. Strings, Wrapper and Date.</td>
-			<td>${requestScope.EM}</td>
+			
+			<td>${requestScope.EM}<br /> ${requestScope.PH}<br />
+				${requestScope.DOB}<br /></td>
 		</tr>
 	</table>
 </body>

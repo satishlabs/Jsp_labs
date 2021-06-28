@@ -3,6 +3,7 @@ package com.satishlabs.servlets;
 import java.io.IOException;
 import java.util.Date;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,6 +29,9 @@ public class TestServlet extends HttpServlet {
 		request.setAttribute("EM", "satish@gmail.com");
 		session.setAttribute("PH", new Long(76761345));
 		ctx.setAttribute("DOB", new Date());
+		
+		RequestDispatcher rd = request.getRequestDispatcher("show.jsp");
+		rd.forward(request, response);
 	}
 
 }
