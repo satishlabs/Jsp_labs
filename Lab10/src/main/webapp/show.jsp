@@ -28,6 +28,11 @@
 				${requestScope.STR[3]}<br />
 				</td>
 		</tr>
+		<tr>
+			<td>2. Collection of Collections.</td>
+			
+			<td>Coming Soon</td>
+		</tr>
 	</table>
 </body>
 </html>

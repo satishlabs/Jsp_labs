@@ -44,6 +44,13 @@ public class TestServlet extends HttpServlet {
 		request.setAttribute("AL", al);
 		String []str = {"dd","ss","sat","pra"};
 		session.setAttribute("STR", str);
+		
+		//3. Collection of Collections(JSTL)
+		ArrayList<ArrayList> al1 = new ArrayList<ArrayList>();
+		al1.add(al);
+		al1.add(al);
+		al1.add(al);
+		request.setAttribute("AL1", al1);
 	}
 
 }
