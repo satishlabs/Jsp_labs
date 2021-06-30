@@ -1,6 +1,7 @@
 package com.satishlabs.servlets;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
@@ -32,6 +33,17 @@ public class TestServlet extends HttpServlet {
 		
 		RequestDispatcher rd = request.getRequestDispatcher("show.jsp");
 		rd.forward(request, response);
+		
+		//2. Collection of Strings, Wrapper and Date
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		al.add(new Integer(11));
+		al.add(new Integer(22));
+		al.add(new Integer(33));
+		al.add(new Integer(44));
+		al.add(new Integer(55));
+		request.setAttribute("AL", al);
+		String []str = {"dd","ss","sat","pra"};
+		session.setAttribute("STR", str);
 	}
 
 }
