@@ -3,6 +3,7 @@ package com.satishlabs.servlets;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -70,6 +71,13 @@ public class TestServlet extends HttpServlet {
 		cs.add(cust);
 		cs.add(cust);
 		session.setAttribute("CS", cs);
+		
+		//6. Map Object
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("sid", "11");
+		hm.put("sname", "Satish");
+		hm.put("email", "satish@gmail");
+		session.setAttribute("HM", hm);
 	}
 
 }
