@@ -29,9 +29,22 @@
 				</td>
 		</tr>
 		<tr>
-			<td>2. Collection of Collections.</td>
+			<td>3. Collection of Collections.</td>
 			
 			<td>Coming Soon</td>
+		</tr>
+		<tr>
+			<td>4. Customer or User defined class object.</td><br/>
+			<br/><br/>
+			<td>Cid: ${CUST.cid}<br/>
+			Cname: ${sessionScope.CUST.cname}<br/>
+			Email: ${sessionScope.CUST.email}<br/>
+			Phone: ${sessionScope.CUST.phone}<br/>
+			Accno: ${sessionScope.CUST.account.accno}<br/>
+			Atype: ${sessionScope.CUST.account.atype}<br/>
+			Bal: ${sessionScope.CUST.account.bal}<br/>
+			Street: ${sessionScope.CUST.account.address.street}<br/>
+			City: ${sessionScope.CUST.account.address.city}<br/>
 		</tr>
 	</table>
 </body>

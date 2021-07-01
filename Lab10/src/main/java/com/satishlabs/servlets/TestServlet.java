@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.satishlabs.entity.Account;
+import com.satishlabs.entity.Address;
+import com.satishlabs.entity.Customer;
+
 /**
  * Servlet implementation class TestServlet
  */
@@ -51,6 +55,12 @@ public class TestServlet extends HttpServlet {
 		al1.add(al);
 		al1.add(al);
 		request.setAttribute("AL1", al1);
+		
+		//4. Customer or User defined class object
+		Address add = new Address("Ranchi Main Road", "Ranchi");
+		Account acc = new Account(101, "SA", 9999.9, add);
+		Customer cust = new Customer(99,"satish", "satish@gmail", 9999, acc);
+		session.setAttribute("CUST", cust);
 	}
 
 }
