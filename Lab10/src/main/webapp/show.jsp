@@ -60,13 +60,17 @@
 			City: ${sessionScope.CS[0].account.address.city}<br/>
 			</td>
 		</tr>
-		<br/><br/><br/>
+		
 		<tr>
 			<td>6. Map Object.</td>
 			<td>Sid: ${sessionScope.HM["sid"]}<br/>
 			Sname: ${sessionScope.HM["sname"]}<br/>
 			Email: ${sessionScope.HM["email"]}<br/>
 			</td>
+		</tr>
+		<tr>
+			<td>6. Map Object.</td>
+			<td>Coming Soon!</td>
 		</tr>
 	</table>
 </body>

@@ -78,6 +78,15 @@ public class TestServlet extends HttpServlet {
 		hm.put("sname", "Satish");
 		hm.put("email", "satish@gmail");
 		session.setAttribute("HM", hm);
+		
+		//7. Collection of Map object (*JSTL)
+		ArrayList<HashMap<String, String>> al2 = new ArrayList<HashMap<String,String>>();
+		al2.add(hm);
+		al2.add(hm);
+		al2.add(hm);
+		request.setAttribute("AL2", al2);
+		RequestDispatcher rd1 = request.getRequestDispatcher("show.jsp");
+		rd1.forward(request, response);
 	}
 
 }
