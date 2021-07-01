@@ -46,6 +46,20 @@
 			Street: ${sessionScope.CUST.account.address.street}<br/>
 			City: ${sessionScope.CUST.account.address.city}<br/>
 		</tr>
+		<tr>
+			<td>5. Collection of User defined class object.</td>
+			
+			<td>Cid: ${CS[0].cid}<br/>
+			Cname: ${sessionScope.CS[0].cname}<br/>
+			Email: ${sessionScope.CS[0].email}<br/>
+			Phone: ${sessionScope.CS[0].phone}<br/>
+			Accno: ${sessionScope.CS[0].account.accno}<br/>
+			Atype: ${sessionScope.CS[0].account.atype}<br/>
+			Bal: ${sessionScope.CS[0].account.bal}<br/>
+			Street: ${sessionScope.CS[0].account.address.street}<br/>
+			City: ${sessionScope.CS[0].account.address.city}<br/>
+			</td>
+		</tr>
 	</table>
 </body>
 </html>

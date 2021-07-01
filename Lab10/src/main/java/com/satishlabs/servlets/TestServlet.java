@@ -61,6 +61,15 @@ public class TestServlet extends HttpServlet {
 		Account acc = new Account(101, "SA", 9999.9, add);
 		Customer cust = new Customer(99,"satish", "satish@gmail", 9999, acc);
 		session.setAttribute("CUST", cust);
+		
+		//5. Collection of User defined class object
+		ArrayList<Customer> cs = new ArrayList<Customer>();
+		cs.add(cust);
+		cs.add(cust);
+		cs.add(cust);
+		cs.add(cust);
+		cs.add(cust);
+		session.setAttribute("CS", cs);
 	}
 
 }
