@@ -29,7 +29,7 @@
 				</td>
 		</tr>
 		<tr>
-			<td>2. Collection of Collections.</td>
+			<td>3. Collection of Collections.</td>
 			
 			<td>Coming Soon</td>
 		</tr>
